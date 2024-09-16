@@ -1,0 +1,30 @@
+@font-face {
+  font-family: n27;
+  src: url("/public/assets/fonts/N27-Regular-&-Italic/Desktop/N27-Regular.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--NWD-font-family);
+}
+
+:root{
+  /* colors */
+  --NWD-aqua-100: #8CFFD6;
+  --NWD-aqua-200: #6BD5AF;
+  --NWD-grey-100: #353532;
+  --NWD-grey-200: #E7E4DE;
+  --NWD-grey-300: #EEEEEC;
+  --NWD-grey-400: #FFFFFF;
+
+  /* fonts */
+  --NWD-font-family: 'n27', monospace;
+  --NWD-font-weight: 400;
+}
+
+a,p {
+  color: var(--NWD-grey-100);
+  font-weight: var(--NWD-font-weight);
+}
