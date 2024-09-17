@@ -3,14 +3,14 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <>
+    <nav>
     <ul id='navbar-ul'>
       <li>
         <p>Pedro Naya</p>
       </li>
 
       <li>
-        <p>[freelance MERN developer]</p>
+        <p>[Freelance MERN developer]</p>
       </li>
 
       <li>
@@ -19,16 +19,16 @@ const Navbar = () => {
 
       <li>
       
-        <a href="/#">[see resume]</a>
+        <a href="/#">[See Resume]</a>
       </li>
 
       <li>
-        <a href="/#">[li]</a>
-        <a href="/#">[gh]</a>
-        <a href="/#">[be]</a>
+        <a href="/#">[LI]</a>
+        <a href="/#">[GH]</a>
+        <a href="/#">[Be]</a>
       </li>
     </ul>
-    </>
+    </nav>
   )
 }
 

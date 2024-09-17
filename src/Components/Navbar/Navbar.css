@@ -1,3 +1,7 @@
+nav{
+  padding: var(--NWD-padding-100);
+}
+
 #navbar-ul {
   display: flex;
   flex-direction: row;
@@ -9,5 +13,6 @@
 #navbar-ul li {
  display: flex;
  flex-direction: row; 
+ font-size: var(--NWD-font-size-p);
 }
 

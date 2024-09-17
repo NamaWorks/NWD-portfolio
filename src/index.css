@@ -1,6 +1,6 @@
 @font-face {
   font-family: n27;
-  src: url("/public/assets/fonts/N27-Regular-&-Italic/Desktop/N27-Regular.otf");
+  src: url("/assets/fonts/N27-Regular-&-Italic/Desktop/N27-Regular.otf");
 }
 
 * {
@@ -22,9 +22,47 @@
   /* fonts */
   --NWD-font-family: 'n27', monospace;
   --NWD-font-weight: 400;
+  --NWD-font-size-p: 1rem; 
+
+  /* spacings */
+  --NWD-padding-100: 1rem;
+  --NWD-gap-100: 0.5rem;
+  --NWD-margin-100: 1rem;  
 }
 
 a,p {
   color: var(--NWD-grey-100);
   font-weight: var(--NWD-font-weight);
+  text-decoration: none;
 }
+
+body {
+  background-color: var(--NWD-grey-200);
+}
+
+.hl {
+  position: relative;
+    background: linear-gradient(
+    -75deg, 
+    transparent 2%,
+    var(--NWD-aqua-100) 0%,
+    var(--NWD-aqua-100) 98%,
+    transparent 10%);
+  font-style: italic;
+}
+
+h1, h2 {
+  font-family: var(--NWD-font-family);
+  font-weight: var(--NWD-font-weight);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
