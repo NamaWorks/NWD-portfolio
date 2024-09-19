@@ -10,6 +10,10 @@
   font-family: var(--NWD-font-family);
 }
 
+*::selection {
+  background-color:var(--NWD-grey-400) ;
+}
+
 :root{
   /* colors */
   --NWD-aqua-100: #8CFFD6;
@@ -42,12 +46,13 @@ body {
 
 .hl {
   position: relative;
-    background: linear-gradient(
+    /* background: linear-gradient(
     -75deg, 
-    transparent 2%,
-    var(--NWD-aqua-100) 0%,
-    var(--NWD-aqua-100) 98%,
-    transparent 10%);
+    transparent 10%,
+    var(--NWD-aqua-100) 5%,
+    var(--NWD-aqua-100) 90%,
+    transparent 10%); */
+  background-color: var(--NWD-aqua-100);
   font-style: italic;
 }
 

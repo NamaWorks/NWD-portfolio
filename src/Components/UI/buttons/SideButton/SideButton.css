@@ -1,0 +1,15 @@
+.side-btn{
+  background: none;
+  border: none;
+  transform: rotate(90deg);
+  position: fixed;
+  max-width: 100px;
+  left: calc(1rem - 55px);
+  bottom: 2.5rem;
+  cursor: pointer;
+}
+
+.side-btn p {
+  text-transform: capitalize;
+  width: 100%;
+}
