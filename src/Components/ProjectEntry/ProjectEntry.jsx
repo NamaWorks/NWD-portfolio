@@ -5,7 +5,7 @@ const ProjectEntry = ({ prObject }) => {
   return (
     <>
       <article className="pr-article">
-        <div className="pr-top-info">
+        <div className="pr-main-info">
           
         </div>
 
