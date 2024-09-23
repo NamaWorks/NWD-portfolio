@@ -6,6 +6,7 @@ const ProjectEntry = ({ prObject }) => {
     <>
       <article className="pr-article">
         <div className="pr-main-info">
+          <p>{prObject.title}</p>
           
         </div>
 
