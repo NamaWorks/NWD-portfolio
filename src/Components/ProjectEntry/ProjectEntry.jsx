@@ -6,8 +6,13 @@ const ProjectEntry = ({ prObject }) => {
     <>
       <article className="pr-article">
         <div className="pr-main-info">
-          <p>{prObject.title}</p>
-          
+          <h3 className="pr-name">{prObject.title}</h3>
+          <h3 className="pr-year">{prObject.year}</h3>
+          {
+            prObject.links.code.frontEnd && (
+                <a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd">gh-frontend</a>
+            )
+          }
         </div>
 
         <div className="pr-inner-info">

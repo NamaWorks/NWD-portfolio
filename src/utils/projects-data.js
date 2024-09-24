@@ -96,7 +96,29 @@ export const projectsData = {
     }
   },
 
+  moona: {
+    title: "moona std",
+    year: 2024,
+    links: {
+      code: {
+        frontEnd: false,
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: "https://moona.dev/",
+        backEnd: false,
+      },
+    },
+    technologies: ["vanilla js", "Wordpress",  "html/css", "Figma"],
+    description: "Moona is a digital development studio",
+    images: {
+      img01: "",
+      img02: "",
+      img03: "",
+      img04: "",
+      img05: "",
+    }
+  },
 
 
-  
 }
