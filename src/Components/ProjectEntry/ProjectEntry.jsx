@@ -10,16 +10,51 @@ const ProjectEntry = ({ prObject }) => {
           <h3 className="pr-year">{prObject.year}</h3>
           {
             prObject.links.code.frontEnd && (
-                <a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd">gh-frontend</a>
+                <a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd">[gh-frontend]</a>
+            )
+          }
+          {
+            prObject.links.code.backEnd && (
+                <a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd">[gh-backend]</a>
+            )
+          }
+          {
+            prObject.links.deployment.frontEnd && (
+                <a href={prObject.links.deployment.frontEnd} target="_blank" className="pr-deployment-frontEnd">[deployment-frontend]</a>
+            )
+          }
+          {
+            prObject.links.deployment.backEnd && (
+                <a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd">[deployment-backend]</a>
             )
           }
         </div>
 
         <div className="pr-inner-info">
-          <div className="pr-images"></div>
+          <div className="pr-images">
+            {
+              Object.keys(prObject.images).map((img, i)=>{
+                return(
+                  <div className="pr-image" key={i}>
+                    <img src={prObject.images[img]} alt={img} />
+                  </div>
+                )
+              })
+            }
+          </div>
           <div className="pr-side-info">
-            <div className="pr-technologies"></div>
-            <div className="pr-description"></div>
+            <div className="pr-technologies">
+              {
+                prObject.technologies.map((tech, i)=>{
+                  return(
+                    <p className="pr-technologie" key={i}>{tech}</p>
+                  )
+                })
+              }
+            </div>
+            <div className="pr-description">
+              <p>{prObject.description}</p>
+            </div>
           </div>
         </div>
       </article>
