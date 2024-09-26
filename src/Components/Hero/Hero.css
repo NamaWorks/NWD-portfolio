@@ -1,14 +1,15 @@
 #hero-section {
   margin: var(--NWD-margin-100);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  height: 90svh;
+  height: calc(90svh - .5rem);
 }
 
 .image-title-container {
   display: flex;
   gap: var(--NWD-gap-100);
+  align-items: flex-start;
 }
 
 #hero-img-container {

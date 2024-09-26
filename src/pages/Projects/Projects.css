@@ -1,0 +1,12 @@
+#projects-section{
+  background-color: var(--NWD-grey-300);
+  padding: var(--NWD-padding-100);
+  height: 100svh;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}

@@ -5,7 +5,7 @@ const SideButton = ({ innerText, fnc, cls, id, hl  }) => {
   return (
     <button
       onClick={()=>{fnc}}
-      className={`side-btn ${cls? cls : ""} ${hl? "hl" : "" }`}
+      className={`${hl? "hl" : "" } side-btn ${cls? cls : ""}`}
       id={id}
     >
       <p>{innerText}</p>

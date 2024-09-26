@@ -1,4 +1,5 @@
 import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
+import SideButton from '../../Components/UI/buttons/SideButton/SideButton'
 import { projectsData } from '../../utils/projects-data'
 import './Projects.css'
 import React, { useEffect, useMemo, useState } from 'react'
@@ -21,6 +22,11 @@ const Projects = () => {
   return (
     <>
       <section id='projects-section'>
+
+      <SideButton
+        innerText={"[see projects]"}
+        hl={true}
+      />
 
         <div className='projects-container'>
           {

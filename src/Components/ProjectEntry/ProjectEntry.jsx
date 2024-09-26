@@ -6,8 +6,8 @@ const ProjectEntry = ({ prObject }) => {
     <>
       <article className="pr-article">
         <div className="pr-main-info">
-          <h3 className="pr-name">{prObject.title}</h3>
-          <h3 className="pr-year">{prObject.year}</h3>
+          <h3 className="pr-name">{prObject.title} // <span className="dimmed">{prObject.kind}</span></h3>
+          <h3 className="pr-year dimmed">{prObject.year}</h3>
           {
             prObject.links.code.frontEnd && (
                 <a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd">[gh-frontend]</a>
@@ -47,7 +47,7 @@ const ProjectEntry = ({ prObject }) => {
               {
                 prObject.technologies.map((tech, i)=>{
                   return(
-                    <p className="pr-technologie" key={i}>{tech}</p>
+                    <p className="pr-technologie dimmed" key={i}>{tech}</p>
                   )
                 })
               }

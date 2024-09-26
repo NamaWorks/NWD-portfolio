@@ -4,5 +4,5 @@
   background-color: var(--NWD-aqua-100);
   position: fixed;
   bottom: 0;
-  z-index: -1;
+  z-index: 99;
 }

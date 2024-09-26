@@ -1,6 +1,6 @@
 @font-face {
   font-family: n27;
-  src: url("/assets/fonts/N27-Regular-&-Italic/Desktop/N27-Regular.otf");
+  src: url("/assets/fonts/N27-Regular-&-Italic/Desktop/N27-Medium.otf");
 }
 
 * {
@@ -19,6 +19,7 @@
   --NWD-aqua-100: #8CFFD6;
   --NWD-aqua-200: #6BD5AF;
   --NWD-grey-100: #353532;
+  --NWD-grey-150: #3535324e;
   --NWD-grey-200: #E7E4DE;
   --NWD-grey-300: #EEEEEC;
   --NWD-grey-400: #FFFFFF;
@@ -31,6 +32,7 @@
   /* spacings */
   --NWD-padding-100: 1rem;
   --NWD-gap-100: 0.5rem;
+  --NWD-gap-200: 2rem;
   --NWD-margin-100: 1rem;  
 }
 
@@ -38,6 +40,7 @@ a,p {
   color: var(--NWD-grey-100);
   font-weight: var(--NWD-font-weight);
   text-decoration: none;
+  font-size: 1rem;
 }
 
 body {
@@ -45,7 +48,7 @@ body {
 }
 
 .hl {
-  position: relative;
+  /* position: relative; */
     /* background: linear-gradient(
     -75deg, 
     transparent 10%,
@@ -61,6 +64,7 @@ h1, h2 {
   font-weight: var(--NWD-font-weight);
   text-transform: uppercase;
   margin: 0;
+  color: var(--NWD-grey-100);
 }
 
 h1 {
@@ -71,3 +75,17 @@ h2 {
   font-size: 1rem;
 }
 
+h3 {
+  font-family: var(--NWD-font-family);
+  font-weight: var(--NWD-font-weight);
+  font-size: 1rem;
+  color: var(--NWD-grey-100);
+}
+
+a {
+  font-family: var(--NWD-font-family);
+  font-size: 1rem;
+  color: var(--NWD-grey-150);
+  /* opacity: .25; */
+  text-transform: uppercase;
+}

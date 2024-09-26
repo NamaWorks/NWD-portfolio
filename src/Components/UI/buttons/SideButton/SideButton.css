@@ -3,9 +3,9 @@
   border: none;
   transform: rotate(90deg);
   position: fixed;
-  max-width: 100px;
-  left: calc(1rem - 55px);
-  bottom: 2.5rem;
+  max-width: 160px;
+  left: calc(3rem - 55px);
+  bottom: 5rem;
   cursor: pointer;
 }
 
