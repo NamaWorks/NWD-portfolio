@@ -2,9 +2,11 @@
   background-color: var(--NWD-grey-300);
   padding: var(--NWD-padding-100);
   height: 100svh;
+  padding-bottom: var(--NWD-padding-200);
 }
 
 .projects-container{
+  border-bottom: solid 1px var(--NWD-grey-150);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

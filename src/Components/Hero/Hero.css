@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   height: calc(90svh - .5rem);
+  margin-top: 60px;
 }
 
 .image-title-container {

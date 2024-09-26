@@ -1,5 +1,8 @@
 nav{
   padding: var(--NWD-padding-100);
+  position: fixed;
+  top: 10px;
+  width: 100%;
 }
 
 #navbar-ul {

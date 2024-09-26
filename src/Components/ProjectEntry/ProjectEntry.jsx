@@ -1,31 +1,45 @@
 import "./ProjectEntry.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ProjectEntry = ({ prObject }) => {
+
+  const [activePr, setActivePr] = useState(false)
+  
+  const [prHeight, setPrHeight] = useState(40)
+
+  useEffect(()=>{
+    activePr ? setPrHeight(350) : setPrHeight(40)
+  }, [activePr])
+
+
   return (
     <>
-      <article className="pr-article">
-        <div className="pr-main-info">
+      <article className="pr-article"
+        style={{height: prHeight}}
+      >
+        <div className="pr-main-info"
+          onClick={()=>{setActivePr(!activePr)}}
+        >
           <h3 className="pr-name">{prObject.title} // <span className="dimmed">{prObject.kind}</span></h3>
           <h3 className="pr-year dimmed">{prObject.year}</h3>
           {
             prObject.links.code.frontEnd && (
-                <a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd">[gh-frontend]</a>
+                <a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>
             )
           }
           {
             prObject.links.code.backEnd && (
-                <a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd">[gh-backend]</a>
+                <a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd dimmed">[gh-backend]</a>
             )
           }
           {
             prObject.links.deployment.frontEnd && (
-                <a href={prObject.links.deployment.frontEnd} target="_blank" className="pr-deployment-frontEnd">[deployment-frontend]</a>
+                <a href={prObject.links.deployment.frontEnd} target="_blank" className="pr-deployment-frontEnd dimmed">[deployment-frontend]</a>
             )
           }
           {
             prObject.links.deployment.backEnd && (
-                <a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd">[deployment-backend]</a>
+                <a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed">[deployment-backend]</a>
             )
           }
         </div>
