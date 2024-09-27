@@ -3,12 +3,11 @@ import React, { useEffect, useState } from "react";
 
 const ProjectEntry = ({ prObject }) => {
 
-  const [activePr, setActivePr] = useState(false)
-  
+  const [activePr, setActivePr] = useState(false)  
   const [prHeight, setPrHeight] = useState(40)
 
   useEffect(()=>{
-    activePr ? setPrHeight(350) : setPrHeight(40)
+    activePr ? setPrHeight(375) : setPrHeight(35)
   }, [activePr])
 
 

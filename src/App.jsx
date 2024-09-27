@@ -1,17 +1,57 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import Hero from './Components/Hero/Hero'
 import Navbar from './Components/Navbar/Navbar'
 import BottomBar from './Components/UI/BottomBar/BottomBar'
+import SideButton from './Components/UI/buttons/SideButton/SideButton'
 import Projects from './pages/Projects/Projects'
+import { NavigationContext } from './contexts/contexts'
+import { handleScroll } from './functions/handleScroll'
+
 
 function App() {
 
+  const [currentSection, setCurrentSection] =  useState("hero-section")
+
+  useEffect(()=>{
+    // window.addEventListener("wheel", (e)=>{
+    //   e.preventDefault()
+    //   let newSection = handleScroll(currentSection)
+    //   setCurrentSection(newSection)
+    // })
+
+    if(currentSection == "hero-section"){
+      document.querySelector("body").style.backgroundColor = "#E7E4DE"
+    } else {
+      document.querySelector("body").style.backgroundColor = "#EEEEEC"
+    }
+
+  },[currentSection])
+
   return (
     <>
+  <NavigationContext.Provider value={{currentSection, setCurrentSection}}>
+  
     <Navbar />
     <Hero />
     <Projects/>
+    <SideButton
+      innerText={currentSection == "hero-section" ? "[See Projects]" : "[Back to Home]"}
+      hl={true}
+      fnc={()=>{
+        if(currentSection == "hero-section"){
+          location.href = "#projects-section"
+          setCurrentSection("projects-section")
+        } else {
+          location.href = "#hero-section"
+          setCurrentSection("hero-section")
+        }
+        }
+      }
+      />
     <BottomBar/>
+
+  </NavigationContext.Provider>
     </>
   )
 }

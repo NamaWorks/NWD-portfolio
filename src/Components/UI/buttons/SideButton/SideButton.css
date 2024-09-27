@@ -1,15 +1,19 @@
 .side-btn{
   background: none;
   border: none;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   position: fixed;
   max-width: 160px;
-  left: calc(3rem - 55px);
-  bottom: 5rem;
+  /* left: calc(3rem - 55px); */
+  left: calc(2rem);
+  /* bottom: 5rem; */
+  bottom: 2rem;
   cursor: pointer;
 }
 
 .side-btn p {
   text-transform: capitalize;
+  font-size: var(--NWD-font-size-p);
+  text-align: left;
   width: 100%;
 }

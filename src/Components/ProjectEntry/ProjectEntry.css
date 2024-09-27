@@ -52,6 +52,7 @@
 
 .pr-technologie {
   text-transform: uppercase;
+  font-size: var(--NWD-font-size-cap-p);
 }
 
 .dimmed {

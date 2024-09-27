@@ -52,11 +52,6 @@ const Hero = () => {
 
       </div>
 
-      <SideButton
-        innerText={"[see projects]"}
-        hl={true}
-      />
-
     </section>
     </>
   )

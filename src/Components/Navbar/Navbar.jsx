@@ -22,7 +22,7 @@ const Navbar = () => {
         <a href="/#">[See Resume]</a>
       </li>
 
-      <li>
+      <li className='social-links'>
         <a href="/#">[LI]</a>
         <a href="/#">[GH]</a>
         <a href="/#">[Be]</a>

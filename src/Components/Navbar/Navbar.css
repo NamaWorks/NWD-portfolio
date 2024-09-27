@@ -19,3 +19,8 @@ nav{
  font-size: var(--NWD-font-size-p);
 }
 
+.social-links{
+  display: flex;
+  flex-direction: row;
+  gap: var(--NWD-gap-100);
+}
