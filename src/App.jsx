@@ -12,20 +12,14 @@ import { handleScroll } from './functions/handleScroll'
 function App() {
 
   const [currentSection, setCurrentSection] =  useState("hero-section")
+  const [selectedView, setSelectedView] = useState("list")
 
   useEffect(()=>{
-    // window.addEventListener("wheel", (e)=>{
-    //   e.preventDefault()
-    //   let newSection = handleScroll(currentSection)
-    //   setCurrentSection(newSection)
-    // })
-
     if(currentSection == "hero-section"){
       document.querySelector("body").style.backgroundColor = "#E7E4DE"
     } else {
       document.querySelector("body").style.backgroundColor = "#EEEEEC"
     }
-
   },[currentSection])
 
   return (

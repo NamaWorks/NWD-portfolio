@@ -1,4 +1,5 @@
 import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
+import ViewSwitch from '../../Components/UI/buttons/ViewSwitch/ViewSwitch'
 import { projectsData } from '../../utils/projects-data'
 import './Projects.css'
 import React, { useEffect, useMemo, useState } from 'react'
@@ -23,6 +24,9 @@ const Projects = () => {
       <section id='projects-section'>
 
         <div className='projects-container'>
+
+        <ViewSwitch/>
+
           {
             prArr.map((pr, i)=>{
               return (

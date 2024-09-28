@@ -1,0 +1,13 @@
+#pr-view-switch {
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+  justify-self: end;
+  gap: var(--NWD-gap-100);
+}
+
+#pr-view-switch button {
+  background: none;
+  border: none; 
+  cursor: pointer;
+}
