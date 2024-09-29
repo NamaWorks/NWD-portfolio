@@ -6,7 +6,7 @@ import BottomBar from './Components/UI/BottomBar/BottomBar'
 import SideButton from './Components/UI/buttons/SideButton/SideButton'
 import Projects from './pages/Projects/Projects'
 import { NavigationContext } from './contexts/contexts'
-import { handleScroll } from './functions/handleScroll'
+import { handleScroll } from './utils/functions/handleScroll'
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-  <NavigationContext.Provider value={{currentSection, setCurrentSection}}>
+  <NavigationContext.Provider value={{currentSection, setCurrentSection, selectedView, setSelectedView}}>
   
     <Navbar />
     <Hero />

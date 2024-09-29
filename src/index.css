@@ -37,6 +37,10 @@
   --NWD-gap-100: 0.5rem;
   --NWD-gap-200: 2rem;
   --NWD-margin-100: 1rem;  
+
+  /* transitions */
+  /* --NWD-transition-100: .5s ease-in-out; */
+  --NWD-transition-100: .5s cubic-bezier(0.21,-0.01, 0.28, 1);
 }
 
 
@@ -55,7 +59,7 @@ a,p {
 }
 
 body {
-  transition: .5s ease-in-out;
+  transition: var(--NWD-transition-100);
   background-color: var(--NWD-grey-200);
   overflow: hidden;
 }

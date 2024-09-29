@@ -1,19 +1,32 @@
+import { handlePrEntrySize } from "../../utils/functions/handlePrEntrySize";
+import { handleProjectsId } from "../../utils/functions/handleProjectsId";
 import "./ProjectEntry.css";
 import React, { useEffect, useState } from "react";
 
 const ProjectEntry = ({ prObject }) => {
 
   const [activePr, setActivePr] = useState(false)  
-  const [prHeight, setPrHeight] = useState(40)
+  const [prHeight, setPrHeight] = useState()
+
+
+  // handlePrEntrySize(handleProjectsId(prObject.title), activePr)
+  
+  useEffect(()=>{
+    console.log("element rendered")
+    setPrHeight(handlePrEntrySize(handleProjectsId(prObject.title), activePr))
+    
+  })
 
   useEffect(()=>{
-    activePr ? setPrHeight(375) : setPrHeight(35)
+    // activePr ? setPrHeight(375) : setPrHeight(40)
   }, [activePr])
 
 
   return (
     <>
-      <article className="pr-article"
+      <article 
+        className="pr-article"
+        id={handleProjectsId(prObject.title)}
         style={{height: prHeight}}
       >
         <div className="pr-main-info"

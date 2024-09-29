@@ -14,7 +14,6 @@ const Projects = () => {
       for (const pr in projectsData) {
         arr.push(projectsData[pr])
       }
-
       return arr
   },[projectsData])
 

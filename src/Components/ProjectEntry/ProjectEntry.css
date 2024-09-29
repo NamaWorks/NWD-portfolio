@@ -5,6 +5,7 @@
   border-top: solid 1px var(--NWD-grey-150);
   padding: var(--NWD-gap-100) 0;
   overflow: hidden;
+  transition: var(--NWD-transition-100);
 }
 
 /* .pr-article, active {
