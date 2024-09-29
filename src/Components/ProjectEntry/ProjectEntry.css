@@ -59,3 +59,7 @@
 .dimmed {
   color: var(--NWD-grey-150);
 }
+
+.inactive {
+  opacity: .2;
+}
