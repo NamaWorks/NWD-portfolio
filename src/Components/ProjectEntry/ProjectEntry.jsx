@@ -1,90 +1,84 @@
+import { NavigationContext } from "../../contexts/contexts";
 import { handlePrEntrySize } from "../../utils/functions/handlePrEntrySize";
 import { handleProjectsId } from "../../utils/functions/handleProjectsId";
 import "./ProjectEntry.css";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 const ProjectEntry = ({ prObject }) => {
 
   const [activePr, setActivePr] = useState(false)  
   const [prHeight, setPrHeight] = useState()
 
-
-  // handlePrEntrySize(handleProjectsId(prObject.title), activePr)
+  const {selectedView} = useContext(NavigationContext)
   
   useEffect(()=>{
-    console.log("element rendered")
     setPrHeight(handlePrEntrySize(handleProjectsId(prObject.title), activePr))
-    
   })
-
-  useEffect(()=>{
-    // activePr ? setPrHeight(375) : setPrHeight(40)
-  }, [activePr])
 
 
   return (
     <>
       <article 
-        className="pr-article"
+        className={`pr-article ${selectedView}`}
         id={handleProjectsId(prObject.title)}
         style={{height: prHeight}}
       >
-        <div className="pr-main-info"
+        <div className={`pr-main-info ${selectedView}`}
           onClick={()=>{setActivePr(!activePr)}}
         >
-          <div className="pr-name-date">
-            <h3 className="pr-name">{prObject.title} // <span className="dimmed">{prObject.kind}</span></h3>
-            <h3 className="pr-year dimmed">{prObject.year}</h3>
+          <div className={`pr-name-date ${selectedView}`}>
+            <h3 className={`pr-name ${selectedView}`}>{prObject.title} // <span className={`pr-field dimmed ${selectedView}`}>{prObject.kind}</span></h3>
+            <h3 className={`pr-year dimmed ${selectedView}`}>{prObject.year}</h3>
           </div>
 
-          <div className="pr-links">
+          <div className={`pr-links ${selectedView}`}>
           {
             prObject.links.code.frontEnd ?
-            (<a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>)
-            : (<a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>)
+            (<a href={prObject.links.code.frontEnd} target="_blank" className={`pr-code-frontEnd dimmed ${selectedView}`}>[gh-frontend]</a>)
+            : (<a href={prObject.links.code.frontEnd} target="_blank" className={`pr-year dimmed inactive ${selectedView}`}>[gh-frontend]</a>)
             
           }
           {
             prObject.links.code.backEnd ? 
-            (<a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd dimmed">[gh-backend]</a>)
-              : (<a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd dimmed inactive">[gh-backend]</a>)
+            (<a href={prObject.links.code.backEnd} target="_blank" className={`pr-backEnd dimmed ${selectedView}`}>[gh-backend]</a>)
+              : (<a href={prObject.links.code.backEnd} target="_blank" className={`pr-backEnd dimmed inactive ${selectedView}`}>[gh-backend]</a>)
           }
           {
             prObject.links.deployment.frontEnd ? 
-            (<a href={prObject.links.deployment.frontEnd} target="_blank" className="pr-deployment-frontEnd dimmed">[deployment-frontend]</a>)
-            : (<a href={prObject.links.deployment.frontEnd} target="_blank" className="pr-deployment-frontEnd dimmed inactive">[deployment-frontend]</a>)
+            (<a href={prObject.links.deployment.frontEnd} target="_blank" className={`pr-deployment-frontEnd dimmed ${selectedView}`}>[deployment-frontend]</a>)
+            : (<a href={prObject.links.deployment.frontEnd} target="_blank" className={`pr-deployment-frontEnd dimmed inactive ${selectedView}`}>[deployment-frontend]</a>)
           }
           {
             prObject.links.deployment.backEnd ? 
-            (<a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed">[deployment-backend]</a>)
-            : (<a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed inactive">[deployment-backend]</a>)
+            (<a href={prObject.links.deployment.backEnd} target="_blank" className={`pr-deployment-backEnd dimmed ${selectedView}`}>[deployment-backend]</a>)
+            : (<a href={prObject.links.deployment.backEnd} target="_blank" className={`pr-deploymwnt-backEnd dimmed inactive ${selectedView}`}>[deployment-backend]</a>)
           }
           </div>
         </div>
 
-        <div className="pr-inner-info">
-          <div className="pr-images">
+        <div className={`pr-inner-info ${selectedView}`}>
+          <div className={`pr-images ${selectedView}`}>
             {
               Object.keys(prObject.images).map((img, i)=>{
                 return(
-                  <div className="pr-image" key={i}>
+                  <div className={`pr-image ${selectedView}`} key={i}>
                     <img src={prObject.images[img]} alt={img} />
                   </div>
                 )
               })
             }
           </div>
-          <div className="pr-side-info">
-            <div className="pr-technologies">
+          <div className={`pr-side-info ${selectedView}`}>
+            <div className={`pr-technologies ${selectedView}`}>
               {
                 prObject.technologies.map((tech, i)=>{
                   return(
-                    <p className="pr-technologie dimmed" key={i}>{tech}</p>
+                    <p className={`pr-tecnologie dimmed ${selectedView}`} key={i}>{tech}</p>
                   )
                 })
               }
             </div>
-            <div className="pr-description">
+            <div className={`pr-description ${selectedView}`}>
               <p>{prObject.description}</p>
             </div>
           </div>
