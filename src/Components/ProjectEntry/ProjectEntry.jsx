@@ -32,17 +32,21 @@ const ProjectEntry = ({ prObject }) => {
         <div className="pr-main-info"
           onClick={()=>{setActivePr(!activePr)}}
         >
-          <h3 className="pr-name">{prObject.title} // <span className="dimmed">{prObject.kind}</span></h3>
-          <h3 className="pr-year dimmed">{prObject.year}</h3>
+          <div className="pr-name-date">
+            <h3 className="pr-name">{prObject.title} // <span className="dimmed">{prObject.kind}</span></h3>
+            <h3 className="pr-year dimmed">{prObject.year}</h3>
+          </div>
+
+          <div className="pr-links">
           {
             prObject.links.code.frontEnd ?
-                (<a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>)
-                : (<a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>)
+            (<a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>)
+            : (<a href={prObject.links.code.frontEnd} target="_blank" className="pr-code-frontEnd dimmed">[gh-frontend]</a>)
             
           }
           {
             prObject.links.code.backEnd ? 
-              (<a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd dimmed">[gh-backend]</a>)
+            (<a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd dimmed">[gh-backend]</a>)
               : (<a href={prObject.links.code.backEnd} target="_blank" className="pr-code-backEnd dimmed inactive">[gh-backend]</a>)
           }
           {
@@ -52,9 +56,10 @@ const ProjectEntry = ({ prObject }) => {
           }
           {
             prObject.links.deployment.backEnd ? 
-                (<a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed">[deployment-backend]</a>)
-                : (<a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed inactive">[deployment-backend]</a>)
+            (<a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed">[deployment-backend]</a>)
+            : (<a href={prObject.links.deployment.backEnd} target="_blank" className="pr-deployment-backEnd dimmed inactive">[deployment-backend]</a>)
           }
+          </div>
         </div>
 
         <div className="pr-inner-info">

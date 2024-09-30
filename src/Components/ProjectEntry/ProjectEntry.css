@@ -18,6 +18,16 @@
   cursor: pointer;
 }
 
+.pr-main-info div{
+  display: flex;
+  justify-content: space-between;
+  gap: var(--NWD-gap-300);
+}
+
+.pr-name {
+  min-width: 20svw;
+}
+
 .pr-inner-info{
   display: flex;
   flex-direction: row;
@@ -62,4 +72,5 @@
 
 .inactive {
   opacity: .2;
+cursor: default;
 }
