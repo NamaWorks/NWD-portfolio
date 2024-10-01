@@ -1,4 +1,5 @@
 import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
+import ProjectEntryGrid from '../../Components/ProjectEntryGrid/ProjectEntryGrid'
 import ViewSwitch from '../../Components/UI/buttons/ViewSwitch/ViewSwitch'
 import { NavigationContext } from '../../contexts/contexts'
 import { projectsData } from '../../utils/projects-data'
@@ -31,12 +32,21 @@ const Projects = () => {
 
           {
             prArr.map((pr, i)=>{
-              return (
-                <ProjectEntry
-                prObject={pr}
-                key={i}
-              />
-              )
+              if(selectedView == "list"){
+                return (
+                  <ProjectEntry
+                  prObject={pr}
+                  key={i}
+                />
+                )
+              } else if (selectedView == "grid"){
+                return (
+                  <ProjectEntryGrid
+                  prObject={pr}
+                  key={i}
+                />
+                )
+              }
             })
           }
         </div>
