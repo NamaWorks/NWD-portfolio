@@ -77,7 +77,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  gap: var(--NWD-gap-100);
+  gap: var(--NWD-gap-300);
 }
 
 .pr-main-info.grid div {

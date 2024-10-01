@@ -23,97 +23,97 @@ export const projectsData = {
     }
   },
 
-  // nomadsNooks: {
-  //   title: "Nomad's Nook",
-  //   year: 2024,
-  // kind: "FrontEnd",
-  //   links: {
-  //     code: {
-  //       frontEnd: "https://github.com/NamaWorks/nomads-nook",
-  //       backEnd: false,
-  //     },
-  //     deployment: {
-  //       frontEnd: "https://nomads-nook.vercel.app/",
-  //       backEnd: false,
-  //     },
-  //   },
-  //   technologies: ["vanilla js", "React", "html/css", "vite", "Figma"],
-  //   description: "description pending",
-  //   images: {
-  //     img01: "",
-  //     img02: "",
-  //     img03: "",
-  //   }
-  // },
+  nomadsNooks: {
+    title: "Nomad's Nook",
+    year: 2024,
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: "https://github.com/NamaWorks/nomads-nook",
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: "https://nomads-nook.vercel.app/",
+        backEnd: false,
+      },
+    },
+    technologies: ["vanilla js", "React", "html/css", "vite", "Figma"],
+    description: "description pending",
+    images: {
+      img01: "",
+      img02: "",
+      img03: "",
+    }
+  },
 
-  // atEvents: {
-  //   title: "@EVENTS",
-  //   year: 2024,
-  // kind: "FrontEnd",
-  //   links: {
-  //     code: {
-  //       frontEnd: "https://github.com/NamaWorks/arrow_events-frontend",
-  //       backEnd: "https://github.com/NamaWorks/arrow_events-backend",
-  //     },
-  //     deployment: {
-  //       frontEnd: "https://arrow-events-frontend.vercel.app/",
-  //       backEnd: "arrow-events-backend.vercel.app",
-  //     },
-  //   },
-  //   technologies: ["vanilla js", "MongoDB", "Express", "html/css", "vite", "Figma"],
-  //   description: "description pending",
-  //   images: {
-  //     img01: "",
-  //     img02: "",
-  //     img03: "",
-  //   }
-  // },
+  atEvents: {
+    title: "@EVENTS",
+    year: 2024,
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: "https://github.com/NamaWorks/arrow_events-frontend",
+        backEnd: "https://github.com/NamaWorks/arrow_events-backend",
+      },
+      deployment: {
+        frontEnd: "https://arrow-events-frontend.vercel.app/",
+        backEnd: "arrow-events-backend.vercel.app",
+      },
+    },
+    technologies: ["vanilla js", "MongoDB", "Express", "html/css", "vite", "Figma"],
+    description: "description pending",
+    images: {
+      img01: "",
+      img02: "",
+      img03: "",
+    }
+  },
 
-  // cantina: {
-  //   title: "Cantina",
-  //   year: 2024,
-  // kind: "FrontEnd",
-  //   links: {
-  //     code: {
-  //       frontEnd: "",
-  //       backEnd: "https://github.com/NamaWorks/cantina-backend",
-  //     },
-  //     deployment: {
-  //       frontEnd: "",
-  //       backEnd: "",
-  //     },
-  //   },
-  //   technologies: ["vanilla js", "React", "Typescript", "Jest", "MongoDB", "Express",  "html/css", "vite", "Figma"],
-  //   description: "description pending",
-  //   images: {
-  //     img01: "",
-  //     img02: "",
-  //     img03: "",
-  //   }
-  // },
+  cantina: {
+    title: "Cantina",
+    year: 2024,
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: "",
+        backEnd: "https://github.com/NamaWorks/cantina-backend",
+      },
+      deployment: {
+        frontEnd: "",
+        backEnd: "",
+      },
+    },
+    technologies: ["vanilla js", "React", "Typescript", "Jest", "MongoDB", "Express",  "html/css", "vite", "Figma"],
+    description: "description pending",
+    images: {
+      img01: "",
+      img02: "",
+      img03: "",
+    }
+  },
 
-  // moona: {
-  //   title: "moona std",
-  //   year: 2024,
-  // kind: "FrontEnd",
-  //   links: {
-  //     code: {
-  //       frontEnd: false,
-  //       backEnd: false,
-  //     },
-  //     deployment: {
-  //       frontEnd: "https://moona.dev/",
-  //       backEnd: false,
-  //     },
-  //   },
-  //   technologies: ["vanilla js", "Wordpress",  "html/css", "Figma"],
-  //   description: "Moona is a digital development studio",
-  //   images: {
-  //     img01: "",
-  //     img02: "",
-  //     img03: "",
-  //   }
-  // },
+  moona: {
+    title: "moona std",
+    year: 2024,
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: false,
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: "https://moona.dev/",
+        backEnd: false,
+      },
+    },
+    technologies: ["vanilla js", "Wordpress",  "html/css", "Figma"],
+    description: "Moona is a digital development studio",
+    images: {
+      img01: "",
+      img02: "",
+      img03: "",
+    }
+  },
 
 
 }

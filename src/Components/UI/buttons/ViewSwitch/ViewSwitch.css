@@ -17,5 +17,6 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  /* justify-self: flex-end; */
   margin-bottom: var(--NWD-gap-200);
 }

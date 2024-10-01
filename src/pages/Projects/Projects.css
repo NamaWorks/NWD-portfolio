@@ -15,13 +15,16 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .projects-container.grid{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  overflow: scroll;
+  /* height: 100%; */
+  gap: var(--NWD-gap-100);
   width: 100%;
 }

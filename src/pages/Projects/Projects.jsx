@@ -24,11 +24,11 @@ const Projects = () => {
 
   return (
     <>
-      <section id='projects-section'>
-
-        <div className={`projects-container ${selectedView}`}>
+      <section id='projects-section' className={selectedView}>
 
         <ViewSwitch/>
+        <div className={`projects-container ${selectedView}`}>
+
 
           {
             prArr.map((pr, i)=>{
