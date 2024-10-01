@@ -7,12 +7,12 @@ import React, { useContext, useEffect, useState } from "react";
 const ProjectEntry = ({ prObject }) => {
 
   const [activePr, setActivePr] = useState(false)  
-  const [prHeight, setPrHeight] = useState()
+  const [prHeight, setPrHeight] = useState(40)
 
-  const {selectedView} = useContext(NavigationContext)
+  const {selectedView } = useContext(NavigationContext)
   
   useEffect(()=>{
-    setPrHeight(handlePrEntrySize(handleProjectsId(prObject.title), activePr))
+    selectedView == "list" && setPrHeight(handlePrEntrySize(handleProjectsId(prObject.title), activePr))    
   })
 
 
@@ -24,7 +24,9 @@ const ProjectEntry = ({ prObject }) => {
         style={{height: prHeight}}
       >
         <div className={`pr-main-info ${selectedView}`}
-          onClick={()=>{setActivePr(!activePr)}}
+          onClick={()=>{
+            setActivePr(!activePr)
+          }}
         >
           <div className={`pr-name-date ${selectedView}`}>
             <h3 className={`pr-name ${selectedView}`}>{prObject.title} // <span className={`pr-field dimmed ${selectedView}`}>{prObject.kind}</span></h3>

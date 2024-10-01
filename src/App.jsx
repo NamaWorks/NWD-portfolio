@@ -6,7 +6,6 @@ import BottomBar from './Components/UI/BottomBar/BottomBar'
 import SideButton from './Components/UI/buttons/SideButton/SideButton'
 import Projects from './pages/Projects/Projects'
 import { NavigationContext } from './contexts/contexts'
-import { handleScroll } from './utils/functions/handleScroll'
 
 
 function App() {

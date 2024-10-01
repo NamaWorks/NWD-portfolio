@@ -10,10 +10,18 @@
   padding-bottom: var(--NWD-padding-200);
 }
 
-.projects-container{
+.projects-container.list{
   border-bottom: solid 1px var(--NWD-grey-150);
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.projects-container.grid{
+  border-bottom: solid 1px var(--NWD-grey-150);
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: flex-end;
   height: 100%;
 }
