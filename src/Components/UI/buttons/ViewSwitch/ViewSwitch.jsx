@@ -7,7 +7,7 @@ const ViewSwitch = () => {
   const navigationContext = useContext(NavigationContext)
 
   return (
-    <div id="pr-view-switch">
+    <div id={`pr-view-switch`} className={navigationContext.selectedView}>
       <button 
         className='dimmed'
         onClick={()=>{navigationContext.setSelectedView("grid")}}

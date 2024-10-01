@@ -11,3 +11,11 @@
   border: none; 
   cursor: pointer;
 }
+
+#pr-view-switch.grid{
+  border-bottom: solid 1px var(--NWD-grey-150);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--NWD-gap-200);
+}

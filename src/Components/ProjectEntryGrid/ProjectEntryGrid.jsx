@@ -7,13 +7,9 @@ import React, { useContext, useEffect, useState } from "react";
 const ProjectEntryGrid = ({ prObject }) => {
 
   const [activePr, setActivePr] = useState(false)  
-  const [prHeight, setPrHeight] = useState(40)
+  const [prHeight, setPrHeight] = useState("auto")
 
   const {selectedView } = useContext(NavigationContext)
-  
-  useEffect(()=>{
-    selectedView == "list" && setPrHeight(handlePrEntrySize(handleProjectsId(prObject.title), activePr))
-  })
 
 
   return (
@@ -23,6 +19,51 @@ const ProjectEntryGrid = ({ prObject }) => {
         id={handleProjectsId(prObject.title)}
         style={{height: prHeight}}
       >
+        <div className={`pr-top-part ${selectedView}`}>
+
+          <div className={`pr-main-image ${selectedView}`}>
+          {
+            Object.keys(prObject.images).map((img, i)=>{
+              if(i<1){return(
+                <div className={`pr-image ${selectedView}`} key={i}>
+                    <img src={prObject.images[img]} alt={img} />
+                  </div>
+                )}
+              })
+            }
+          </div>
+        <div className={`pr-inner-info ${selectedView}`}>
+
+          <div className={`pr-side-info ${selectedView}`}>
+            <div className={`pr-technologies ${selectedView}`}>
+              {
+                prObject.technologies.map((tech, i)=>{
+                  return(
+                    <p className={`pr-tecnologie dimmed ${selectedView}`} key={i}>{tech}</p>
+                  )
+                })
+              }
+            </div>
+            <div className={`pr-description ${selectedView}`}>
+              <p>{prObject.description}</p>
+            </div>
+
+            <div className={`pr-images ${selectedView}`}>
+            {
+              Object.keys(prObject.images).map((img, i)=>{
+                if(i>=1){return(
+                  <div className={`pr-image ${selectedView}`} key={i}>
+                    <img src={prObject.images[img]} alt={img} />
+                  </div>
+                )}
+              })
+            }
+          </div>
+          </div>
+        </div>
+        </div>
+
+        
         <div className={`pr-main-info ${selectedView}`}
           onClick={()=>{
             setActivePr(!activePr)
@@ -55,34 +96,6 @@ const ProjectEntryGrid = ({ prObject }) => {
             (<a href={prObject.links.deployment.backEnd} target="_blank" className={`pr-deployment-backEnd dimmed ${selectedView}`}>[deployment-backend]</a>)
             : (<a href={prObject.links.deployment.backEnd} target="_blank" className={`pr-deploymwnt-backEnd dimmed inactive ${selectedView}`}>[deployment-backend]</a>)
           }
-          </div>
-        </div>
-
-        <div className={`pr-inner-info ${selectedView}`}>
-          <div className={`pr-images ${selectedView}`}>
-            {
-              Object.keys(prObject.images).map((img, i)=>{
-                return(
-                  <div className={`pr-image ${selectedView}`} key={i}>
-                    <img src={prObject.images[img]} alt={img} />
-                  </div>
-                )
-              })
-            }
-          </div>
-          <div className={`pr-side-info ${selectedView}`}>
-            <div className={`pr-technologies ${selectedView}`}>
-              {
-                prObject.technologies.map((tech, i)=>{
-                  return(
-                    <p className={`pr-tecnologie dimmed ${selectedView}`} key={i}>{tech}</p>
-                  )
-                })
-              }
-            </div>
-            <div className={`pr-description ${selectedView}`}>
-              <p>{prObject.description}</p>
-            </div>
           </div>
         </div>
       </article>

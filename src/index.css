@@ -62,7 +62,7 @@ a,p {
 body {
   transition: var(--NWD-transition-100);
   background-color: var(--NWD-grey-200);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .hl {
