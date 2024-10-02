@@ -2,6 +2,7 @@ import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
 import ProjectEntryGrid from '../../Components/ProjectEntryGrid/ProjectEntryGrid'
 import ViewSwitch from '../../Components/UI/buttons/ViewSwitch/ViewSwitch'
 import { NavigationContext } from '../../contexts/contexts'
+import { transformScroll } from '../../utils/functions/transformScroll'
 import { projectsData } from '../../utils/projects-data'
 import './Projects.css'
 import React, { useContext, useEffect, useMemo, useState } from 'react'
@@ -27,7 +28,10 @@ const Projects = () => {
       <section id='projects-section' className={selectedView}>
 
         <ViewSwitch/>
-        <div className={`projects-container ${selectedView}`}>
+        <div 
+          className={`projects-container ${selectedView}`}
+          onWheel={selectedView == "grid" && transformScroll}
+        >
 
 
           {

@@ -17,7 +17,7 @@ export const projectsData = {
     technologies: ["vanilla js", "html/css", "vite", "Figma"],
     description: "Atelier 37 aims to reach an audience with taste that lies between mid-century and wabi sabi trends by showing a portfolio with their latest projects and telling a little about themselves and their work process to connect with potential clients.",
     images: {
-      img01: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-hero.webp",
+      img01: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-mobile-background.webp",
       img02: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-mobile-scaled.webp",
       img03: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-carousel.webp",
     }
@@ -40,9 +40,9 @@ export const projectsData = {
     technologies: ["vanilla js", "React", "html/css", "vite", "Figma"],
     description: "description pending",
     images: {
-      img01: "",
-      img02: "",
-      img03: "",
+      img01: "https://moona.dev/wp-content/uploads/2024/10/nomadsnook-cart-02-scaled.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2024/10/NN_ticket.jpg",
+      img03: "https://moona.dev/wp-content/uploads/2024/10/Mstd_RRSS_Instagram_NN09.jpg",
     }
   },
 
@@ -63,9 +63,32 @@ export const projectsData = {
     technologies: ["vanilla js", "MongoDB", "Express", "html/css", "vite", "Figma"],
     description: "description pending",
     images: {
-      img01: "",
-      img02: "",
-      img03: "",
+      img01: "https://moona.dev/wp-content/uploads/2024/10/Mstd_RRSS_Instagram_AtEvents05.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2024/10/Mstd_RRSS_Instagram_AtEvents02.jpg",
+      img03: "https://moona.dev/wp-content/uploads/2024/10/Mstd_RRSS_Instagram_AtEvents03.jpg",
+    }
+  },
+
+  moona: {
+    title: "moona std",
+    year: 2024,
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: false,
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: "https://moona.dev/",
+        backEnd: false,
+      },
+    },
+    technologies: ["vanilla js", "Wordpress",  "html/css", "Figma"],
+    description: "Moona is a digital development studio",
+    images: {
+      img01: "https://moona.dev/wp-content/uploads/2024/10/Frame-70.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2024/10/Frame-68.jpg",
+      img03: "https://moona.dev/wp-content/uploads/2024/10/Frame-68.jpg",
     }
   },
 
@@ -91,29 +114,5 @@ export const projectsData = {
       img03: "",
     }
   },
-
-  moona: {
-    title: "moona std",
-    year: 2024,
-  kind: "FrontEnd",
-    links: {
-      code: {
-        frontEnd: false,
-        backEnd: false,
-      },
-      deployment: {
-        frontEnd: "https://moona.dev/",
-        backEnd: false,
-      },
-    },
-    technologies: ["vanilla js", "Wordpress",  "html/css", "Figma"],
-    description: "Moona is a digital development studio",
-    images: {
-      img01: "",
-      img02: "",
-      img03: "",
-    }
-  },
-
 
 }
