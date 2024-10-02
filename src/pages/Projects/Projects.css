@@ -27,4 +27,14 @@
   /* height: 100%; */
   gap: var(--NWD-gap-100);
   width: 100%;
+  padding-bottom: var(--NWD-gap-300);
 }
+
+.dimmed {
+  color: var(--NWD-grey-150);
+}
+
+.inactive {
+  opacity: .2;
+  cursor: default;
+} 

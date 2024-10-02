@@ -20,7 +20,7 @@
   gap: var(--NWD-gap-300);
 }
 
-.pr-name {
+.pr-name.list {
   min-width: 20svw;
 }
 
@@ -61,12 +61,3 @@
   text-transform: uppercase;
   font-size: var(--NWD-font-size-cap-p);
 }
-
-.dimmed {
-  color: var(--NWD-grey-150);
-}
-
-.inactive {
-  opacity: .2;
-  cursor: default;
-} 

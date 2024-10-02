@@ -84,5 +84,21 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: var(--NWD-gap-300);
+  gap: var(--NWD-gap-100);
 }
+
+.pr-links.grid {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pr-links.grid a {
+  min-width: 200px;
+}
+
+.pr-name.grid{
+  min-width: 200px;
+}
+
