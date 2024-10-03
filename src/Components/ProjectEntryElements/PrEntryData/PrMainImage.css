@@ -1,28 +1,22 @@
 /* GRID */
 
-.pr-main-image.grid{
+.pr-main-image.grid {
   flex: 1;
-  /* height: 100%;
-  width: 100%; */
 }
 
-.pr-main-image.grid{
+.pr-main-image.grid {
   height: auto;
 }
 
 .pr-main-image .pr-image.grid {
   max-height: none;
   max-width: none;
-  /* min-height: 30svh; */
   width: 100%;
-  /* max-width: 60svw; */
   object-fit: none;
-  /* object-position: center; */
   height: 100%;
-  /* overflow: hidden; */
 }
 
-.pr-main-image .pr-image.grid img{
+.pr-main-image .pr-image.grid img {
   object-fit: cover;
   object-position: center;
   height: 100%;

@@ -13,9 +13,16 @@ import React, { useContext, useEffect, useState } from "react";
 const ProjectEntryGrid = ({ prObject }) => {
 
   const [activePr, setActivePr] = useState(false)  
-  const [prHeight, setPrHeight] = useState("auto")
+  const [prWidth, setPrWidth] = useState(20)
 
   const {selectedView } = useContext(NavigationContext)
+
+  useEffect(()=>{
+    selectedView == "grid" &&
+      setPrWidth(
+        handlePrEntrySize(handleProjectsId(prObject.title), activePr, selectedView)
+      );
+  })
 
 
   return (
@@ -23,9 +30,9 @@ const ProjectEntryGrid = ({ prObject }) => {
       <article 
         className={`pr-article ${selectedView}`}
         id={handleProjectsId(prObject.title)}
-        style={{height: prHeight}}
+        style={{width: prWidth}}
       >
-        <div className={`pr-top-part ${selectedView}`}>
+        <div className={`pr-top-part ${selectedView}`} onClick={()=>{setActivePr(!activePr)}}>
           <PrMainImg prObject = {prObject}/>
         <div className={`pr-inner-info ${selectedView}`}>
           <div className={`pr-side-info ${selectedView}`}>

@@ -13,10 +13,11 @@
 }
 
 #pr-view-switch.grid{
+  position: absolute;
+  top: 112svh;
   border-bottom: solid 1px var(--NWD-grey-150);
-  width: 100%;
+  width: calc(100% - 2rem);
   display: flex;
   justify-content: flex-end;
-  /* justify-self: flex-end; */
   margin-bottom: var(--NWD-gap-200);
 }

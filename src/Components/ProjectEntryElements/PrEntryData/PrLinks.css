@@ -4,11 +4,11 @@
   text-align: right;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .pr-links.grid a {
-  min-width: 200px;
+  /* min-width: 150px; */
 }
 
 /* LIST */

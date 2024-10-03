@@ -18,7 +18,7 @@ const ProjectEntry = ({ prObject }) => {
   useEffect(() => {
     selectedView == "list" &&
       setPrHeight(
-        handlePrEntrySize(handleProjectsId(prObject.title), activePr)
+        handlePrEntrySize(handleProjectsId(prObject.title), activePr, selectedView)
       );
   });
 

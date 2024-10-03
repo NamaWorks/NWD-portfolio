@@ -5,7 +5,7 @@ import { NavigationContext } from '../../contexts/contexts'
 import { transformScroll } from '../../utils/functions/transformScroll'
 import { projectsData } from '../../utils/projects-data'
 import './Projects.css'
-import React, { useContext, useEffect, useMemo, useState } from 'react'
+import React, { useContext, useMemo } from 'react'
 
 
 const Projects = () => {
@@ -25,12 +25,14 @@ const Projects = () => {
 
   return (
     <>
-      <section id='projects-section' className={selectedView}>
-
+      <section id='projects-section' className={selectedView}
+        onWheel={selectedView == "grid" && transformScroll}
+        >
+          
         <ViewSwitch/>
+
         <div 
           className={`projects-container ${selectedView}`}
-          onWheel={selectedView == "grid" && transformScroll}
         >
 
 

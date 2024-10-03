@@ -10,7 +10,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <p>[Freelance MERN developer]</p>
+        <p>Freelance MERN developer</p>
       </li>
 
       <li>
