@@ -20,34 +20,10 @@
   gap: var(--NWD-gap-300);
 }
 
-.pr-name.list {
-  min-width: 20svw;
-}
-
 .pr-inner-info.list{
   display: flex;
   flex-direction: row;
   gap: var(--NWD-gap-100);
-}
-
-.pr-images.list {
-  display: flex;
-  max-height: 40svh;
-  gap: var(--NWD-gap-100);
-}
-
-.pr-image.list {
-  max-width: 50svw;
-  object-fit: cover;
-  object-position: center;
-  /* height: 100%; */
-  overflow: hidden;
-}
-
-.pr-image.list img {
-  /* width: 100%; */
-  height: 100%;
-  width: 100%;
 }
 
 .pr-side-info.list {

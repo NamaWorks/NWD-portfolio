@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { NavigationContext } from '../../../contexts/contexts'
+import './PrTechs.css'
 
 const PrTechs = ({prObject}) => {
   const {selectedView} = useContext(NavigationContext)

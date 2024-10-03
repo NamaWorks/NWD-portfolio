@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { NavigationContext } from '../../../contexts/contexts'
+import './PrMainImage.css'
 
 
 const PrMainImg = ({prObject}) => {

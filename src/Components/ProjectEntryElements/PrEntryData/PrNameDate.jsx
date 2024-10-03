@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { NavigationContext } from '../../../contexts/contexts'
+import './PrNameDate.css'
 
 const PrNameDate = ({prObject}) => {
   const {selectedView} = useContext(NavigationContext)

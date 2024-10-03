@@ -1,0 +1,11 @@
+/* LIST */
+
+.pr-name.list {
+  min-width: 20svw;
+}
+
+/* GRID */
+
+.pr-name.grid{
+  min-width: 200px;
+}

@@ -1,0 +1,40 @@
+/* GRID */
+
+.pr-images.grid{
+  display: flex;
+  gap: var(--NWD-gap-100);
+}
+
+.pr-image.grid {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pr-image.grid img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* LIST */
+
+.pr-images.list {
+  display: flex;
+  max-height: 40svh;
+  gap: var(--NWD-gap-100);
+}
+
+.pr-image.list {
+  max-width: 50svw;
+  object-fit: cover;
+  object-position: center;
+  /* height: 100%; */
+  overflow: hidden;
+}
+
+.pr-image.list img {
+  /* width: 100%; */
+  height: 100%;
+  width: 100%;
+}

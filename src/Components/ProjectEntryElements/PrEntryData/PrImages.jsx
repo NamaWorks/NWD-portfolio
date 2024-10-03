@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { NavigationContext } from '../../../contexts/contexts'
+import './PrImages.css'
 
 const PrImages = ({prObject, startFrom = 0}) => {
   const {selectedView} = useContext(NavigationContext)
