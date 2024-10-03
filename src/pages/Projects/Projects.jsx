@@ -1,5 +1,5 @@
-import ProjectEntry from '../../Components/ProjectEntry/ProjectEntry'
-import ProjectEntryGrid from '../../Components/ProjectEntryGrid/ProjectEntryGrid'
+import ProjectEntry from '../../Components/ProjectEntryElements/ProjectEntry/ProjectEntry'
+import ProjectEntryGrid from '../../Components/ProjectEntryElements/ProjectEntryGrid/ProjectEntryGrid'
 import ViewSwitch from '../../Components/UI/buttons/ViewSwitch/ViewSwitch'
 import { NavigationContext } from '../../contexts/contexts'
 import { transformScroll } from '../../utils/functions/transformScroll'
