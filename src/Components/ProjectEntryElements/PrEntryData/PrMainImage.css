@@ -2,6 +2,7 @@
 
 .pr-main-image.grid {
   flex: 1;
+  cursor: pointer;
 }
 
 .pr-main-image.grid {

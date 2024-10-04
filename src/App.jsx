@@ -7,12 +7,21 @@ import SideButton from './Components/UI/buttons/SideButton/SideButton'
 import Projects from './pages/Projects/Projects'
 import { NavigationContext } from './contexts/contexts'
 
-
 function App() {
-
+  
   const [currentSection, setCurrentSection] =  useState("hero-section")
   const [selectedView, setSelectedView] = useState("list")
-
+  
+  const changeSection=()=>{
+    if(currentSection == "hero-section"){
+      location.href = "#projects-section"
+      setCurrentSection("projects-section")
+    } else {
+      location.href = "#hero-section"
+      setCurrentSection("hero-section")
+    }
+  }
+  
   useEffect(()=>{
     if(currentSection == "hero-section"){
       document.querySelector("body").style.backgroundColor = "#E7E4DE"
@@ -31,16 +40,7 @@ function App() {
     <SideButton
       innerText={currentSection == "hero-section" ? "[See Projects]" : "[Back to Home]"}
       hl={true}
-      fnc={()=>{
-        if(currentSection == "hero-section"){
-          location.href = "#projects-section"
-          setCurrentSection("projects-section")
-        } else {
-          location.href = "#hero-section"
-          setCurrentSection("hero-section")
-        }
-        }
-      }
+      fnc={changeSection}
       />
     <BottomBar/>
 
