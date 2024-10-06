@@ -14,7 +14,7 @@ export const handlePrEntrySize = (elementId, active = false, selectedView ) => {
         return Number(prContent.getBoundingClientRect().height) + Number(prMainInfo.getBoundingClientRect().height) + 64
       }
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   } else if (selectedView == "grid") {
     try {
@@ -24,15 +24,15 @@ export const handlePrEntrySize = (elementId, active = false, selectedView ) => {
       const prContent = prEntry.querySelector('pr-main-info')
 
       if(!active){
-        console.log(prEntry.getBoundingClientRect().width)
-        console.log(prMainImage.getBoundingClientRect().width)
+        // console.log(prEntry.getBoundingClientRect().width)
+        // console.log(prMainImage.getBoundingClientRect().width)
 
         return Number(prMainImage.getBoundingClientRect().width)
       } else if (active) {
         return Number(prEntry.getBoundingClientRect().width) +  Number(prMainImage.getBoundingClientRect().width) + 20
       }
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   }
 };

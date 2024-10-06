@@ -23,8 +23,6 @@ const ProjectEntryGrid = ({ prObject }) => {
         handlePrEntrySize(handleProjectsId(prObject.title), activePr, selectedView)
       );
       openProjects && setActivePr(false)
-      console.log("openProjects = " + openProjects )
-      console.log("activePr = " + activePr )
   });
 
 
@@ -36,20 +34,20 @@ const ProjectEntryGrid = ({ prObject }) => {
         style={{width: prWidth}}
       >
         <div className={`pr-top-part ${selectedView}`} onClick={()=>{
-                      if(activePr){
-                        if(openProjects){
-                          setActivePr(false);
-                          setOpenProjects(false);
-                        } else if (!openProjects){
-                          setOpenProjects(true);
-                        }
-                      } else if (!activePr){
-                        setOpenProjects(true);
-                        setTimeout(() => {
-                          setOpenProjects(false);
-                          setActivePr(true);
-                        }, 0);
-                      }
+            if (activePr) {
+              if (openProjects) {
+                setActivePr(false);
+                setOpenProjects(false);
+              } else if (!openProjects) {
+                setOpenProjects(true);
+              }
+            } else if (!activePr) {
+              setOpenProjects(true);
+              setTimeout(() => {
+                setOpenProjects(false);
+                setActivePr(true);
+              }, 0);
+            }
           }}>
           <PrMainImg prObject = {prObject}/>
         <div className={`pr-inner-info ${selectedView}`}>

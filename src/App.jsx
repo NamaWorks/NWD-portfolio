@@ -6,6 +6,7 @@ import BottomBar from './Components/UI/BottomBar/BottomBar'
 import SideButton from './Components/UI/buttons/SideButton/SideButton'
 import Projects from './pages/Projects/Projects'
 import { NavigationContext } from './contexts/contexts'
+import HoverMsg from './Components/UI/HoverMsg/HoverMsg'
 
 function App() {
   
@@ -44,6 +45,8 @@ function App() {
       fnc={changeSection}
       />
     <BottomBar/>
+
+    <HoverMsg />
 
   </NavigationContext.Provider>
     </>
