@@ -13,14 +13,15 @@ const ProjectEntry = ({ prObject }) => {
   const [activePr, setActivePr] = useState(false);
   const [prHeight, setPrHeight] = useState(40);
 
-  const { selectedView } = useContext(NavigationContext);
+  const { selectedView, openProjects, setOpenProjects } = useContext(NavigationContext);
 
   useEffect(() => {
     selectedView == "list" &&
       setPrHeight(
         handlePrEntrySize(handleProjectsId(prObject.title), activePr, selectedView)
       );
-  });
+      openProjects && setActivePr(false)
+    });
 
   return (
     <>
@@ -32,7 +33,20 @@ const ProjectEntry = ({ prObject }) => {
         <div
           className={`pr-main-info ${selectedView}`}
           onClick={() => {
-            setActivePr(!activePr);
+            if(activePr){
+              if(openProjects){
+                setActivePr(false);
+                setOpenProjects(false);
+              } else if (!openProjects){
+                setOpenProjects(true);
+              }
+            } else if (!activePr){
+              setOpenProjects(true);
+              setTimeout(() => {
+                setOpenProjects(false);
+                setActivePr(true);
+              }, 0);
+            }
           }}
         >
           <PrNameDate prObject={prObject} />

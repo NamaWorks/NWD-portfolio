@@ -11,6 +11,7 @@ function App() {
   
   const [currentSection, setCurrentSection] =  useState("hero-section")
   const [selectedView, setSelectedView] = useState("list")
+  const [openProjects, setOpenProjects] = useState()
   
   const changeSection=()=>{
     if(currentSection == "hero-section"){
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <>
-  <NavigationContext.Provider value={{currentSection, setCurrentSection, selectedView, setSelectedView}}>
+  <NavigationContext.Provider value={{currentSection, setCurrentSection, selectedView, setSelectedView, openProjects, setOpenProjects}}>
   
     <Navbar />
     <Hero />

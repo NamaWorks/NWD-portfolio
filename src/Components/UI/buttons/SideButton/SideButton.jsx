@@ -13,7 +13,6 @@ const SideButton = ({ innerText, fnc, cls, id, hl  }) => {
 
   return (
     <button
-      // onClick={fnc}
       onClick={fncPlusMatrix}
       className={`${hl? "hl" : "" } side-btn ${cls? cls : ""}`}
       id={id}

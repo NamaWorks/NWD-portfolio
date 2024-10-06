@@ -15,14 +15,17 @@ const ProjectEntryGrid = ({ prObject }) => {
   const [activePr, setActivePr] = useState(false)  
   const [prWidth, setPrWidth] = useState(20)
 
-  const {selectedView } = useContext(NavigationContext)
+  const { selectedView, openProjects, setOpenProjects } = useContext(NavigationContext);
 
   useEffect(()=>{
     selectedView == "grid" &&
       setPrWidth(
         handlePrEntrySize(handleProjectsId(prObject.title), activePr, selectedView)
       );
-  })
+      openProjects && setActivePr(false)
+      console.log("openProjects = " + openProjects )
+      console.log("activePr = " + activePr )
+  });
 
 
   return (
@@ -32,7 +35,22 @@ const ProjectEntryGrid = ({ prObject }) => {
         id={handleProjectsId(prObject.title)}
         style={{width: prWidth}}
       >
-        <div className={`pr-top-part ${selectedView}`} onClick={()=>{setActivePr(!activePr)}}>
+        <div className={`pr-top-part ${selectedView}`} onClick={()=>{
+                      if(activePr){
+                        if(openProjects){
+                          setActivePr(false);
+                          setOpenProjects(false);
+                        } else if (!openProjects){
+                          setOpenProjects(true);
+                        }
+                      } else if (!activePr){
+                        setOpenProjects(true);
+                        setTimeout(() => {
+                          setOpenProjects(false);
+                          setActivePr(true);
+                        }, 0);
+                      }
+          }}>
           <PrMainImg prObject = {prObject}/>
         <div className={`pr-inner-info ${selectedView}`}>
           <div className={`pr-side-info ${selectedView}`}>
@@ -42,11 +60,7 @@ const ProjectEntryGrid = ({ prObject }) => {
           </div>
         </div>
         </div>
-        <div className={`pr-main-info ${selectedView}`}
-          onClick={()=>{
-            setActivePr(!activePr)
-          }}
-        >
+        <div className={`pr-main-info ${selectedView}`}>
 <PrNameDate prObject={prObject}/>
 <PrLinks prObject={prObject}/>
 
