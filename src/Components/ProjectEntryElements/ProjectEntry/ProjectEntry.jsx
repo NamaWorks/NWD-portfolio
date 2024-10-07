@@ -1,6 +1,8 @@
 import { NavigationContext } from "../../../contexts/contexts";
+import { getMousePosition } from "../../../utils/functions/getMousePosition";
 import { handlePrEntrySize } from "../../../utils/functions/handlePrEntrySize";
 import { handleProjectsId } from "../../../utils/functions/handleProjectsId";
+import { HoverMsg } from "../../UI/HoverMsg/HoverMsg";
 import PrDescription from "../PrEntryData/PrDescription";
 import PrImages from "../PrEntryData/PrImages";
 import PrLinks from "../PrEntryData/PrLinks";
@@ -25,6 +27,18 @@ const ProjectEntry = ({ prObject }) => {
 
   return (
     <>
+
+    {
+      window.onmousemove=(e)=>{
+        const hoverMsg = document.querySelector(".hover-text")
+        if(hoverMsg){
+          hoverMsg.style.position = "fixed"
+          hoverMsg.style.top = getMousePosition(e).y + "px"
+          hoverMsg.style.left = getMousePosition(e).x + 20 + "px"
+        }
+      }
+    }
+     
       <article
         className={`pr-article ${selectedView}`}
         id={handleProjectsId(prObject.title)}
@@ -32,6 +46,13 @@ const ProjectEntry = ({ prObject }) => {
       >
         <div
           className={`pr-main-info ${selectedView}`}
+          onMouseEnter={()=>{
+            activePr && HoverMsg("Close Project")
+            !activePr && HoverMsg("See Project")
+          }}
+          onMouseLeave={()=>{
+            document.querySelector(".hover-text").remove()
+          }}
           onClick={() => {
             if(activePr){
               if(openProjects){

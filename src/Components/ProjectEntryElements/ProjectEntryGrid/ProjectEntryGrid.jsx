@@ -1,6 +1,8 @@
 import { NavigationContext } from "../../../contexts/contexts";
+import { getMousePosition } from "../../../utils/functions/getMousePosition";
 import { handlePrEntrySize } from "../../../utils/functions/handlePrEntrySize";
 import { handleProjectsId } from "../../../utils/functions/handleProjectsId";
+import { HoverMsg } from "../../UI/HoverMsg/HoverMsg";
 import PrDescription from "../PrEntryData/PrDescription";
 import PrImages from "../PrEntryData/PrImages";
 import PrLinks from "../PrEntryData/PrLinks";
@@ -28,12 +30,25 @@ const ProjectEntryGrid = ({ prObject }) => {
 
   return (
     <>
+
+{
+      window.onmousemove=(e)=>{
+        const hoverMsg = document.querySelector(".hover-text")
+        if(hoverMsg){
+          hoverMsg.style.position = "fixed"
+          hoverMsg.style.top = getMousePosition(e).y + "px"
+          hoverMsg.style.left = getMousePosition(e).x + 20 + "px"
+        }
+      }
+    }
+
       <article 
         className={`pr-article ${selectedView}`}
         id={handleProjectsId(prObject.title)}
         style={{width: prWidth}}
       >
-        <div className={`pr-top-part ${selectedView}`} onClick={()=>{
+        <div className={`pr-top-part ${selectedView}`} 
+          onClick={()=>{
             if (activePr) {
               if (openProjects) {
                 setActivePr(false);
@@ -48,7 +63,17 @@ const ProjectEntryGrid = ({ prObject }) => {
                 setActivePr(true);
               }, 0);
             }
-          }}>
+          }}
+
+          onMouseEnter={()=>{
+            activePr && HoverMsg("Close Project")
+            !activePr && HoverMsg("See Project")
+          }}
+          onMouseLeave={()=>{
+            document.querySelector(".hover-text").remove()
+          }}
+
+          >
           <PrMainImg prObject = {prObject}/>
         <div className={`pr-inner-info ${selectedView}`}>
           <div className={`pr-side-info ${selectedView}`}>

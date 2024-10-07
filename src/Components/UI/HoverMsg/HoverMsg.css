@@ -1,0 +1,13 @@
+.hover-text {
+  position: fixed;
+  z-index: 99;
+  pointer-events: none;
+  background-color: var(--NWD-aqua-100);
+}
+
+.hover-text p {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: var(--NWD-font-size-p);
+  text-align: left;
+}
