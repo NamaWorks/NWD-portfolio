@@ -3,11 +3,18 @@
   z-index: 99;
   pointer-events: none;
   background-color: var(--NWD-aqua-100);
+  transition: var(--NWD-transition-100);
+  transition-property: opacity, width;
+  /* overflow: hidden; */
 }
 
 .hover-text p {
+  text-align: rigth;
   text-transform: capitalize;
   font-style: italic;
   font-size: var(--NWD-font-size-p);
   text-align: left;
+  hyphens: none;
+  line-break: strict;
+  /* width: 200px; */
 }

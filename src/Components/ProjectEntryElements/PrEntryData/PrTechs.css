@@ -1,0 +1,6 @@
+.pr-technologies {
+  display: flex;
+  flex-direction: column;
+  gap: var(--NWD-gap-150);
+  text-transform: uppercase;
+}

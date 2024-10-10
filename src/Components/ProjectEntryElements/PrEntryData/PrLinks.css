@@ -5,10 +5,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  transition: var(--NWD-transition-100);
 }
 
 .pr-links.grid a {
-  /* min-width: 150px; */
+  min-width: 150px;
+
 }
 
 /* LIST */

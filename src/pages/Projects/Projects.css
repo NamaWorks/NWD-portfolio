@@ -48,4 +48,5 @@
 .inactive {
   opacity: .2;
   cursor: default;
+  pointer-events: none;
 } 

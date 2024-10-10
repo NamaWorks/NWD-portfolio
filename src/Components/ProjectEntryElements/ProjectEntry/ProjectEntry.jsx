@@ -51,7 +51,7 @@ const ProjectEntry = ({ prObject }) => {
             !activePr && HoverMsg("See Project")
           }}
           onMouseLeave={()=>{
-            document.querySelector(".hover-text").remove()
+            document.querySelectorAll(".hover-text").forEach((item)=>{item.remove()})
           }}
           onClick={() => {
             if(activePr){

@@ -23,9 +23,9 @@ const Navbar = () => {
       </li>
 
       <li className='social-links'>
-        <a href="/#">[LI]</a>
-        <a href="/#">[GH]</a>
-        <a href="/#">[Be]</a>
+        <a href="https://www.linkedin.com/in/pedro-naya-907820148/" target="_blank">[LI]</a>
+        <a href="https://github.com/NamaWorks" target="_blank">[GH]</a>
+        <a href="https://www.behance.net/pedronama" target="_blank">[Be]</a>
       </li>
     </ul>
     </nav>

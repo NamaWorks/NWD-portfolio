@@ -70,7 +70,7 @@ const ProjectEntryGrid = ({ prObject }) => {
             !activePr && HoverMsg("See Project")
           }}
           onMouseLeave={()=>{
-            document.querySelector(".hover-text").remove()
+            document.querySelectorAll(".hover-text").forEach((item)=>{item.remove()})
           }}
 
           >
@@ -84,9 +84,8 @@ const ProjectEntryGrid = ({ prObject }) => {
         </div>
         </div>
         <div className={`pr-main-info ${selectedView}`}>
-<PrNameDate prObject={prObject}/>
-<PrLinks prObject={prObject}/>
-
+            <PrNameDate prObject={prObject}/>
+            <PrLinks prObject={prObject} activePr={activePr}/>
         </div>
       </article>
     </>

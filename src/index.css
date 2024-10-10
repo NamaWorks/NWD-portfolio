@@ -43,6 +43,7 @@
   /* transitions */
   /* --NWD-transition-100: .5s ease-in-out; */
   --NWD-transition-100: .5s cubic-bezier(0.21,-0.01, 0.28, 1);
+  --NWD-transition-100-invert: .5s cubic-bezier(0.29, 0.01, 0.62, 1);
 }
 
 
@@ -107,4 +108,5 @@ a {
   /* opacity: .25; */
   text-transform: uppercase;
   font-size: var(--NWD-font-size-cap-p);
+  z-index: 99;
 }

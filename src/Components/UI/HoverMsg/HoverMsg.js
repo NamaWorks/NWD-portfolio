@@ -6,6 +6,8 @@ export const HoverMsg = (textToPrint="pending text")=>{
 
   const textContainer = document.createElement("div")
   textContainer.classList.add("hover-text")
+  // textContainer.style.width = "100px"
+  textContainer.style.opacity = 1
   
   const msg = document.createElement("p")
   msg.innerText = `[${textToPrint}]`
@@ -14,4 +16,12 @@ export const HoverMsg = (textToPrint="pending text")=>{
   body.append(textContainer)
 
   matrixEffect(msg)
+
+  setTimeout(() => {
+    // textContainer.style.width = 0
+    textContainer.style.opacity = 0
+    setTimeout(() => {
+      textContainer.remove()
+    }, 500);
+  }, 2500);
 }
