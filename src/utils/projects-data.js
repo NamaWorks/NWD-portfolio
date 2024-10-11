@@ -57,7 +57,7 @@ export const projectsData = {
       },
       deployment: {
         frontEnd: "https://arrow-events-frontend.vercel.app/",
-        backEnd: "arrow-events-backend.vercel.app",
+        backEnd: "https://arrow-events-backend.vercel.app/",
       },
     },
     technologies: ["vanilla js", "MongoDB", "Express", "html/css", "vite", "Figma"],

@@ -1,7 +1,7 @@
 /* GRID */
 
 .pr-links.grid {
-  text-align: right;
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

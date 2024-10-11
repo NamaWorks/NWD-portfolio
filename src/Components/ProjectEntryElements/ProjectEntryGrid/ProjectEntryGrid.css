@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  /* gap: var(--NWD-gap-300); */
+  gap: var(--NWD-gap-100);
 }
 
 .pr-main-info.grid div {
