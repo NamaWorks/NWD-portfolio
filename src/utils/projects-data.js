@@ -49,7 +49,7 @@ export const projectsData = {
   atEvents: {
     title: "@EVENTS",
     year: 2024,
-  kind: "FrontEnd",
+  kind: "FullStack",
     links: {
       code: {
         frontEnd: "https://github.com/NamaWorks/arrow_events-frontend",
@@ -72,7 +72,7 @@ export const projectsData = {
   moona: {
     title: "moona std",
     year: 2024,
-  kind: "FrontEnd",
+  kind: "FullStack",
     links: {
       code: {
         frontEnd: false,

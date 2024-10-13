@@ -5,12 +5,13 @@ import { NavigationContext } from '../../contexts/contexts'
 import { transformScroll } from '../../utils/functions/transformScroll'
 import { projectsData } from '../../utils/projects-data'
 import './Projects.css'
-import React, { useContext, useMemo } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 
 
 const Projects = () => {
 
   const {selectedView}=useContext(NavigationContext)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   
   const prArr = useMemo(()=>{
@@ -23,13 +24,17 @@ const Projects = () => {
   },[projectsData])
 
 
+  useEffect(()=>{
+    
+  },[])
+
   return (
     <>
       <section id='projects-section' className={selectedView}
         onWheel={selectedView == "grid" && transformScroll}
         >
-          
-        <ViewSwitch/>
+
+        {windowWidth>=800 && <ViewSwitch/> }
 
         <div 
           className={`projects-container ${selectedView}`}
