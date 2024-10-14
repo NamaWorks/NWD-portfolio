@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <li>
       
-        <a href="/#">[See Resume]</a>
+        <a href="https://moona.dev/wp-content/uploads/2024/10/CV-PNM-Pic-2024-nolinks.pdf" target='_blank'>[See Resume]</a>
       </li>
 
       <li className='social-links'>
