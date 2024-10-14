@@ -110,3 +110,9 @@ a {
   font-size: var(--NWD-font-size-cap-p);
   z-index: 99;
 }
+
+@media (max-width: 650px){
+  body{
+    overflow: scroll;
+  }
+}

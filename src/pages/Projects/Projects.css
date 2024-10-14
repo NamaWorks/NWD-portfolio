@@ -50,3 +50,9 @@
   cursor: default;
   pointer-events: none;
 } 
+
+@media (max-width: 650px){
+  #projects-section.list{
+    height: auto;
+  }
+}

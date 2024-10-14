@@ -97,6 +97,16 @@
 }
 
 @media (max-width: 650px){
+  #hero-section{
+    height: auto;
+    margin-bottom: 10svh;
+    padding-top: 100px;
+  }
+
+  .description-title-container{
+    width: auto;
+  }
+
   .image-title-container{
     flex-direction: column;
   }

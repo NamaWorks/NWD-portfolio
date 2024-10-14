@@ -72,7 +72,8 @@ const ProjectEntry = ({ prObject }) => {
         >
           <PrNameDate prObject={prObject} />
 
-          <PrLinks prObject={prObject} />
+          {activePr && <PrLinks prObject={prObject} />}
+
         </div>
 
         <div className={`pr-inner-info ${selectedView}`}>

@@ -26,6 +26,16 @@ nav{
 }
 
 #navbar-ul {
-  flex-direction: column;
+  flex-direction: row;
   align-items: end;
+}
+
+@media (max-width: 840px){
+  #navbar-ul{
+    flex-direction: column;
+  }
+
+  #navbar-ul li {
+    background-color: var(--NWD-grey-200);
+  }
 }
