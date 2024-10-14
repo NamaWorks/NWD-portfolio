@@ -13,7 +13,9 @@ const Hero = () => {
 
           <div id='hero-image-description' >
             <div className="logo-container">
-              <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />
+              {/* <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" /> */}
+              {window.innerWidth <= 890 && <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />}
+              {window.innerWidth >= 890 && <img src="https://github.com/NamaWorks/NamaWorks/assets/136508151/ed690a3a-971f-4c1c-bf22-186252870ca9" alt="This is my personal logo" className='gif'/>}
             </div>
             <h2>
               I support designers <br/> and agencies with <br/><span className='hl'>creative development</span>

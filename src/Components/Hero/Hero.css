@@ -21,12 +21,24 @@
   width: 100%;
 }
 
-.logo-container {
-  max-width:40px;
-}
+/* .logo-container { */
+  /* min-height: 80px; */
+  /* max-width:40px; */
+  /* max-width:200px; */
+/* } */
 
 .logo-container img {
+  height: 100%;
   width: 100%;
+  max-width: 40px;
+}
+
+.logo-container img.gif {
+  height: 100%;
+  width: 100%;
+  filter:brightness(0);
+  opacity: .8;
+  max-width: 220px;
 }
 
 #hero-image-description {
