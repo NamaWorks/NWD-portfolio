@@ -87,8 +87,8 @@ export const projectsData = {
     description: "Moona is a digital development studio based in Spain. Is where your digital ideas are handcrafted to fit perectly to expectations.",
     images: {
       img01: "https://moona.dev/wp-content/uploads/2024/10/Frame-70.jpg",
-      img02: "https://moona.dev/wp-content/uploads/2024/10/Frame-68.jpg",
-      img03: "https://moona.dev/wp-content/uploads/2024/10/Frame-68.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2024/10/Frame-67.png",
+      img03: "https://moona.dev/wp-content/uploads/2024/10/Frame-69.png",
     }
   },
 
