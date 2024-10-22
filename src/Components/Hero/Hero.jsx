@@ -1,8 +1,25 @@
+import Lottie from 'lottie-web'
 import SideButton from '../UI/buttons/SideButton/SideButton'
 import './Hero.css'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const Hero = () => {
+
+  
+    const animationContainer = useRef(null)
+
+    // useEffect(()=>{
+    //   Lottie.loadAnimation({
+    //     container: animationContainer.current,
+    //     renderer: 'svg',
+    //     loop: true,
+    //     autoplay: true,
+    //     path: "assets/images/illustrations/01_NWD_Illustration-AngryThinker_mask.mp4.lottie.json"
+    //   })
+    // },[])
+    
+  
+
   return (
     <>
     <section id='hero-section'>
@@ -13,9 +30,9 @@ const Hero = () => {
 
           <div id='hero-image-description' >
             <div className="logo-container">
-              {/* <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" /> */}
+              <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />
               {window.innerWidth <= 890 && <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />}
-              {window.innerWidth >= 890 && <img src="https://github.com/NamaWorks/NamaWorks/assets/136508151/ed690a3a-971f-4c1c-bf22-186252870ca9" alt="This is my personal logo" className='gif'/>}
+              {/* {window.innerWidth >= 890 && <img src="https://github.com/NamaWorks/NamaWorks/assets/136508151/ed690a3a-971f-4c1c-bf22-186252870ca9" alt="This is my personal logo" className='gif'/>} */}
             </div>
             <h2>
               I support designers <br/> and agencies with <br/><span className='hl'>creative development</span>
@@ -27,7 +44,11 @@ const Hero = () => {
       <div className='description-title-container'>
 
         <div id="hero-illustration">
-          <img src="/assets/images/illustrations/Property 1=Frame 107.png" alt="illustration of me" />
+          {/* <img src="/assets/images/illustrations/Property 1=Frame 107.png" alt="illustration of me" /> */}
+          <img src="/public/assets/images/illustrations/01_NWD_Illustration-AngryThinker_darkGrey.gif" alt="illustration of me" />
+          {/* <div id='illustration-animation' ref={animationContainer} ></div> */}
+          
+          
         </div>
 
         <h1>creative <span className='hl'>MERN</span> <br/> <span className='hl'>developer</span></h1>

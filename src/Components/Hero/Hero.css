@@ -64,9 +64,11 @@
 
  #hero-illustration {
   position: absolute;
-  bottom: -50px;
-  right: 250px;
+  bottom: 150px;
+  right: 500px;
   width: 800px;
+  max-width: 350px;
+  max-height: 350px;
   z-index: 99;
   mix-blend-mode: multiply;
   pointer-events: none;
