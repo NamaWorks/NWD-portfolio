@@ -45,7 +45,7 @@ const Hero = () => {
 
         <div id="hero-illustration">
           {/* <img src="/assets/images/illustrations/Property 1=Frame 107.png" alt="illustration of me" /> */}
-          <img src="/public/assets/images/illustrations/01_NWD_Illustration-AngryThinker_darkGrey.gif" alt="illustration of me" />
+          <img src="/assets/images/illustrations/01_NWD_Illustration-AngryThinker_darkGrey.gif" alt="illustration of me" />
           {/* <div id='illustration-animation' ref={animationContainer} ></div> */}
           
           
