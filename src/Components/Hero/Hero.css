@@ -99,6 +99,9 @@
 #hero-section {
   flex-direction: column;
 }
+#hero-illustration{
+  display:none
+}
  
 }
 

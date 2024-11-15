@@ -10,6 +10,11 @@
   background: none;
   border: none; 
   cursor: pointer;
+  /* width: 100%; */
+}
+
+#pr-view-switch button img {
+  min-width: 20px;
 }
 
 #pr-view-switch.grid{
@@ -20,6 +25,18 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: var(--NWD-gap-200);
+}
+
+@media (max-height: 650px){
+  #pr-view-switch.grid{
+    position: absolute;
+    top: 185svh;
+    border-bottom: solid 1px var(--NWD-grey-150);
+    width: calc(100% - 2rem);
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom: var(--NWD-gap-200);
+  }
 }
 
 @media (max-width: 790px){

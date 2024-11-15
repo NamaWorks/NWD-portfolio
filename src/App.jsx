@@ -43,7 +43,7 @@ function App() {
     <Hero />
     <Projects/>
 
-    {window.innerWidth>= 650 && (<SideButton innerText={currentSection == "hero-section" ? "[See Projects]" : "[Back to Home]"} hl={true} fnc={changeSection}/>)}
+    {/* {window.innerWidth>= 650 && (<SideButton innerText={currentSection == "hero-section" ? "[See Projects]" : "[Back to Home]"} hl={true} fnc={changeSection}/>)} */}
 
     <BottomBar/>
 

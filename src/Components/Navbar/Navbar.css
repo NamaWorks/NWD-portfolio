@@ -26,6 +26,11 @@ nav{
   gap: var(--NWD-gap-100);
 }
 
+.social-links a {
+  /* color: var(--NWD-aqua-200); */
+  text-decoration: underline;
+}
+
 #navbar-ul {
   flex-direction: row;
   align-items: end;

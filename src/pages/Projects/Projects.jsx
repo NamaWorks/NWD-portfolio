@@ -2,6 +2,7 @@ import ProjectEntry from '../../Components/ProjectEntryElements/ProjectEntry/Pro
 import ProjectEntryGrid from '../../Components/ProjectEntryElements/ProjectEntryGrid/ProjectEntryGrid'
 import ViewSwitch from '../../Components/UI/buttons/ViewSwitch/ViewSwitch'
 import { NavigationContext } from '../../contexts/contexts'
+import { handleHoverProjectsGrid } from '../../utils/functions/handleHoverProjectsGrid'
 import { transformScroll } from '../../utils/functions/transformScroll'
 import { projectsData } from '../../utils/projects-data'
 import './Projects.css'

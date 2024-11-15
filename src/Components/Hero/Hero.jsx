@@ -18,20 +18,20 @@ const Hero = () => {
     //   })
     // },[])
     
-  
+
 
   return (
     <>
     <section id='hero-section'>
       <div className='image-title-container'>
           <div id='hero-img-container'>
-            <img src="/assets/images/PedroBW.png" alt="that's me, Pedro" />
+            <img src="/assets/images/PedroBW.webp" alt="that's me, Pedro" />
           </div>
 
           <div id='hero-image-description' >
             <div className="logo-container">
               <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />
-              {window.innerWidth <= 890 && <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />}
+              {/* {window.innerWidth <= 890 && <img src="/assets/images/NWD-brand/Dark Grey Logo.svg" alt="This is my personal logo" />} */}
               {/* {window.innerWidth >= 890 && <img src="https://github.com/NamaWorks/NamaWorks/assets/136508151/ed690a3a-971f-4c1c-bf22-186252870ca9" alt="This is my personal logo" className='gif'/>} */}
             </div>
             <h2>

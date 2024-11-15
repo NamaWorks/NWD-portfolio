@@ -50,7 +50,7 @@
 
 #root {
   /* display: flex; */
-  /* width: 100%; */
+  /* width: 90%; */
   /* overflow-x: hidden; */
 }
 
@@ -64,7 +64,10 @@ a,p {
 body {
   transition: var(--NWD-transition-100);
   background-color: var(--NWD-grey-200);
-  overflow: hidden;
+  /*! //////////////////////////////////////// The next line is for removing the scroll functionality */ 
+  /* overflow: scroll; */
+  scroll-behavior: smooth;
+
 }
 
 .hl {
@@ -116,4 +119,35 @@ a {
     overflow: scroll;
     scroll-behavior: smooth;
   }
+}
+
+
+/* hide scrollbar */
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#projects-section::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-container::-webkit-scrollbar{
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#projects-section {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.projects-container{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

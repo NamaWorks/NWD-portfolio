@@ -1,5 +1,6 @@
 import { NavigationContext } from "../../../contexts/contexts";
 import { getMousePosition } from "../../../utils/functions/getMousePosition";
+import { handleHoverProjectsGrid } from "../../../utils/functions/handleHoverProjectsGrid";
 import { handlePrEntrySize } from "../../../utils/functions/handlePrEntrySize";
 import { handleProjectsId } from "../../../utils/functions/handleProjectsId";
 import { HoverMsg } from "../../UI/HoverMsg/HoverMsg";
@@ -46,6 +47,8 @@ const ProjectEntryGrid = ({ prObject }) => {
         className={`pr-article ${selectedView}`}
         id={handleProjectsId(prObject.title)}
         style={{width: prWidth}}
+        onMouseEnter={()=>{handleHoverProjectsGrid(true)}}
+        onMouseOut={()=>{handleHoverProjectsGrid(false)}}
       >
         <div className={`pr-top-part ${selectedView}`} 
           onClick={()=>{
