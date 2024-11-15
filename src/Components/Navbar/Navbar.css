@@ -1,9 +1,10 @@
 nav{
   padding: var(--NWD-padding-100);
   position: fixed;
-  top: 10px;
+  top: 0px;
   width: 100%;
   z-index: 100;
+  background-color: var(--NWD-grey-200);
 }
 
 #navbar-ul {
@@ -37,11 +38,13 @@ nav{
 }
 
 @media (max-width: 840px){
-  #navbar-ul{
-    flex-direction: column;
+
+  nav{
+    position: absolute;
+    /* right: 1rem; */
   }
 
-  #navbar-ul li {
-    background-color: var(--NWD-grey-200);
+  #navbar-ul{
+    flex-direction: column;
   }
 }
