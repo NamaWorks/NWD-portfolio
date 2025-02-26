@@ -2,7 +2,7 @@ export const projectsData = {
 
   malauva: {
     title: "MalaUva",
-    year: '2025-WIP',
+    year: 'WIP',
   kind: "FullStack",
     links: {
       code: {
@@ -17,9 +17,9 @@ export const projectsData = {
     technologies: ["JavaScript", "React", "Typescript", "Jest", "MongoDB", "Express",  "html/css", "sass", "vite", "Figma"],
     description: "MalaUva is where tradition blends with modernity in an online wine cellar. This project is an ecommerce where final users can find their favourite wine buy it and learn more about the family business.",
     images: {
-      img01: "public/assets/images/MalaUva/Mstd_RRSS_Instagram_MU_013.jpg",
-      img02: "public/assets/images/MalaUva/Mstd_RRSS_Instagram_MU_011.jpg",
-      img03: "public/assets/images/MalaUva/Mstd_RRSS_Instagram_MU_012.jpg",
+      img01: "https://moona.dev/wp-content/uploads/2025/02/Mstd_RRSS_Instagram_MU_013.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2025/02/Mstd_RRSS_Instagram_MU_011.jpg",
+      img03: "https://moona.dev/wp-content/uploads/2025/02/Mstd_RRSS_Instagram_MU_012.jpg",
     }
   },
   
