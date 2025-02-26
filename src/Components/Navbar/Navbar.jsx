@@ -21,7 +21,7 @@ const Navbar = () => {
 
         <li>
           <a
-            href="https://moona.dev/wp-content/uploads/2024/10/CV-PNM-Pic-2024-EN.pdf"
+            href="https://moona.dev/wp-content/uploads/2025/02/CV-PNM-pic-2025-en.pdf"
             target="_blank"
           >
             [See Resume]

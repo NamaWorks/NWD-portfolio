@@ -1,27 +1,28 @@
 export const projectsData = {
-  
-  a37: {
-    title: "Atelier 37",
-    year: 2024,
-    kind: "FrontEnd",
+
+  malauva: {
+    title: "MalaUva",
+    year: '2025-WIP',
+  kind: "FullStack",
     links: {
       code: {
-        frontEnd: "https://github.com/NamaWorks/atelier37",
-        backEnd: false,
+        frontEnd: "https://github.com/NamaWorks/malauva-frontend",
+        backEnd: "https://github.com/NamaWorks/malauva-backend",
       },
       deployment: {
-        frontEnd: "https://atelier37.vercel.app/",
-        backEnd: false,
-      }
+        frontEnd: "https://malauva-frontend.vercel.app/",
+        backEnd: "https://malauva-backend.vercel.app/",
+      },
     },
-    technologies: ["vanilla js", "html/css", "vite", "Figma"],
-    description: "Atelier 37 aims to reach an audience with taste that lies between mid-century and wabi sabi trends by showing a portfolio with their latest projects and telling a little about themselves and their work process to connect with potential clients.",
+    technologies: ["JavaScript", "React", "Typescript", "Jest", "MongoDB", "Express",  "html/css", "sass", "vite", "Figma"],
+    description: "MalaUva is where tradition blends with modernity in an online wine cellar. This project is an ecommerce where final users can find their favourite wine buy it and learn more about the family business.",
     images: {
-      img01: "https://moona.dev/wp-content/uploads/2024/10/Behance_A37_15.jpg",
-      img02: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-mobile-scaled.webp",
-      img03: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-hero.webp",
+      img01: "public/assets/images/MalaUva/Mstd_RRSS_Instagram_MU_013.jpg",
+      img02: "public/assets/images/MalaUva/Mstd_RRSS_Instagram_MU_011.jpg",
+      img03: "public/assets/images/MalaUva/Mstd_RRSS_Instagram_MU_012.jpg",
     }
   },
+  
 
   nomadsNooks: {
     title: "Nomad's Nook",
@@ -92,28 +93,26 @@ export const projectsData = {
     }
   },
 
-
-  // cantina: {
-  //   title: "Cantina",
-  //   year: 2024,
-  // kind: "FrontEnd",
-  //   links: {
-  //     code: {
-  //       frontEnd: "",
-  //       backEnd: "https://github.com/NamaWorks/cantina-backend",
-  //     },
-  //     deployment: {
-  //       frontEnd: "",
-  //       backEnd: "",
-  //     },
-  //   },
-  //   technologies: ["vanilla js", "React", "Typescript", "Jest", "MongoDB", "Express",  "html/css", "vite", "Figma"],
-  //   description: "description pending",
-  //   images: {
-  //     img01: "",
-  //     img02: "",
-  //     img03: "",
-  //   }
-  // },
-
+  a37: {
+    title: "Atelier 37",
+    year: 2024,
+    kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: "https://github.com/NamaWorks/atelier37",
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: "https://atelier37.vercel.app/",
+        backEnd: false,
+      }
+    },
+    technologies: ["vanilla js", "html/css", "vite", "Figma"],
+    description: "Atelier 37 aims to reach an audience with taste that lies between mid-century and wabi sabi trends, by showing a portfolio with their latest projects and telling a little about themselves and their work process, to connect with potential clients.",
+    images: {
+      img01: "https://moona.dev/wp-content/uploads/2024/10/Behance_A37_15.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-mobile-scaled.webp",
+      img03: "https://moona.dev/wp-content/uploads/2024/09/Atelier37-hero.webp",
+    }
+  },
 }
