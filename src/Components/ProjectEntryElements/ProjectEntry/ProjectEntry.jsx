@@ -47,7 +47,7 @@ const ProjectEntry = ({ prObject }) => {
         <div
           className={`pr-main-info ${selectedView}`}
           onMouseEnter={()=>{
-            activePr && HoverMsg("Close Project")
+            // activePr && HoverMsg("Close Project")
             !activePr && HoverMsg("See Project")
           }}
           onMouseLeave={()=>{

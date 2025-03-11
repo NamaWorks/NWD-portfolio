@@ -1,7 +1,7 @@
 export const projectsData = {
 
   LucianCarrell: {
-    title: "Lucian Carrell - Photography",
+    title: "Lucian Carrell-Photography",
     year: 'WIP',
   kind: "FrontEnd",
     links: {
