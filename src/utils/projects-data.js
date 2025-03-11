@@ -1,5 +1,28 @@
 export const projectsData = {
 
+  LucianCarrell: {
+    title: "Lucian Carrell - Photography",
+    year: 'WIP',
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: "https://github.com/NamaWorks/lucian-photography_portfolio",
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: false,
+        backEnd: false,
+      },
+    },
+    technologies: ["NextJS", "React", "Typescript", "Tailwind",  "html/css", "sass", "Figma"],
+    description: "Lucian Carrell - Photography. Lucian is a proffessional in his craft, a master of lights and shadows. His work reflects his passion for textures, lights and transparencies.",
+    images: {
+      img01: "https://moona.dev/wp-content/uploads/2025/03/MSTD_RRSS_Ribbed-Glass_01.jpg",
+      img02: "https://moona.dev/wp-content/uploads/2025/03/MSTD_RRSS_Ribbed-Glass_02.jpg",
+      img03: "https://moona.dev/wp-content/uploads/2025/03/MSTD_RRSS_Ribbed-Glass_03.jpg",
+    }
+  },
+
   malauva: {
     title: "MalaUva",
     year: 'WIP',
