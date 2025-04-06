@@ -10,7 +10,7 @@ export const projectsData = {
         backEnd: false,
       },
       deployment: {
-        frontEnd: false,
+        frontEnd: 'https://lucian-photography-portfolio.vercel.app/',
         backEnd: false,
       },
     },
