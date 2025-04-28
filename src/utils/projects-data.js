@@ -2,7 +2,7 @@ export const projectsData = {
 
   LucianCarrell: {
     title: "Lucian Carrell-Photography",
-    year: 'WIP',
+    year: '2025',
   kind: "FrontEnd",
     links: {
       code: {
@@ -25,7 +25,7 @@ export const projectsData = {
 
   malauva: {
     title: "MalaUva",
-    year: 'WIP',
+    year: '2025',
   kind: "FullStack",
     links: {
       code: {
