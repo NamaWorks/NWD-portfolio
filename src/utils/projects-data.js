@@ -1,5 +1,28 @@
 export const projectsData = {
 
+  habita: {
+    title: "Habita",
+    year: 'WIP',
+  kind: "FrontEnd",
+    links: {
+      code: {
+        frontEnd: "https://github.com/NamaWorks/habita-landing",
+        backEnd: false,
+      },
+      deployment: {
+        frontEnd: false,
+        backEnd: false,
+      },
+    },
+    technologies: ["React", "Typescript", "Tailwind",  "html/css", "sass", "GSAP", "Figma"],
+    description: "Habita’s new website — a company that turns vans into cozy homes on wheels. Clean, functional, and inspired by the freedom of the open road.",
+    images: {
+      img01: "https://github.com/NamaWorks/habita-landing/blob/main/public/readme/EXP/MSTD_RRSS_Habita_01.jpg?raw=true",
+      img02: "https://github.com/NamaWorks/habita-landing/blob/main/public/readme/EXP/MSTD_RRSS_Habita_04.jpg?raw=true",
+      img03: "https://github.com/NamaWorks/habita-landing/blob/main/public/readme/EXP/MSTD_RRSS_Habita_03.jpg?raw=true",
+    }
+  },
+
   LucianCarrell: {
     title: "Lucian Carrell-Photography",
     year: '2025',
