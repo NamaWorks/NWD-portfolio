@@ -63,6 +63,9 @@ I'm Pedro Naya - a digital environment enthusiast and freelance web developer ba
 <br/>
 
 I work mostly within the React ecosystem, using tools like Next.js for smooth frontend experiences, and building out backend services to power robust, end-to-end applications. My focus is always on clean architecture, performance, and creating experiences that feel just right for the user.
+<br/>
+<br/>
+
 I've collaborated with a variety of clients, adapting to different goals, timelines, and technical needs. Whether you’re building a new product from scratch or need someone to jump in and boost your existing project, I bring clarity, creativity, and a get-things-done attitude to the table.
 
 <br/>
